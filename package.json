@@ -1,0 +1,13 @@
+{
+  "name": "tally",
+  "version": "1.0.0",
+  "description": "A tiny self-hosted family budget app. Record spending on your phone in 5 seconds; data stays on your own computer.",
+  "license": "MIT",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "demo": "node --no-warnings scripts/demo.js en && node --no-warnings scripts/demo.js zh",
+    "test": "node --no-warnings tests/run.js"
+  }
+}

@@ -1,0 +1,682 @@
+{
+ "default_accounts": {
+  "card": "Credit card",
+  "bank": "Checking account",
+  "cash": "Cash"
+ },
+ "categories": [
+  {
+   "name": "Rent / Mortgage",
+   "grp": "Home",
+   "kind": "expense",
+   "budget": 2000,
+   "variable": false,
+   "keywords": [
+    "rent",
+    "mortgage",
+    "landlord"
+   ]
+  },
+  {
+   "name": "Utilities",
+   "grp": "Home",
+   "kind": "expense",
+   "budget": 250,
+   "variable": false,
+   "keywords": [
+    "hydro",
+    "electric",
+    "electricity",
+    "water bill",
+    "gas bill",
+    "utility",
+    "utilities",
+    "enbridge"
+   ]
+  },
+  {
+   "name": "Internet & Phone",
+   "grp": "Home",
+   "kind": "expense",
+   "budget": 150,
+   "variable": false,
+   "keywords": [
+    "internet",
+    "phone bill",
+    "mobile",
+    "rogers",
+    "bell",
+    "telus",
+    "fido",
+    "koodo",
+    "freedom mobile",
+    "verizon",
+    "at&t",
+    "t-mobile",
+    "comcast",
+    "xfinity"
+   ]
+  },
+  {
+   "name": "Insurance",
+   "grp": "Home",
+   "kind": "expense",
+   "budget": 250,
+   "variable": false,
+   "keywords": [
+    "insurance",
+    "premium"
+   ]
+  },
+  {
+   "name": "Fuel & Charging",
+   "grp": "Car",
+   "kind": "expense",
+   "budget": 250,
+   "quick": true,
+   "daily": true,
+   "keywords": [
+    "gas station",
+    "fuel",
+    "petrol",
+    "esso",
+    "shell",
+    "petro",
+    "chevron",
+    "mobil",
+    "costco gas",
+    "charging",
+    "supercharger",
+    "chargepoint"
+   ]
+  },
+  {
+   "name": "Car Maintenance",
+   "grp": "Car",
+   "kind": "expense",
+   "budget": 100,
+   "keywords": [
+    "oil change",
+    "tire",
+    "tyre",
+    "car wash",
+    "mechanic",
+    "repair"
+   ],
+   "fields": [
+    [
+     "What",
+     "",
+     [
+      "Service",
+      "Car wash",
+      "Tires",
+      "Repair"
+     ]
+    ],
+    [
+     "Where",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Transit & Parking",
+   "grp": "Car",
+   "kind": "expense",
+   "budget": 80,
+   "daily": true,
+   "keywords": [
+    "parking",
+    "toll",
+    "taxi",
+    "uber",
+    "lyft",
+    "bus",
+    "transit",
+    "subway",
+    "train ticket",
+    "presto"
+   ],
+   "fields": [
+    [
+     "What",
+     "",
+     [
+      "Parking",
+      "Toll",
+      "Taxi",
+      "Transit"
+     ]
+    ],
+    [
+     "Where",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Groceries",
+   "grp": "Living",
+   "kind": "expense",
+   "budget": 1200,
+   "quick": true,
+   "daily": true,
+   "keywords": [
+    "grocery",
+    "groceries",
+    "supermarket",
+    "costco",
+    "walmart",
+    "loblaws",
+    "no frills",
+    "metro",
+    "sobeys",
+    "freshco",
+    "food basics",
+    "superstore",
+    "trader joe",
+    "whole foods",
+    "safeway",
+    "kroger",
+    "aldi",
+    "t&t",
+    "farm boy",
+    "milk",
+    "eggs",
+    "fruit",
+    "vegetables",
+    "dollarama"
+   ],
+   "fields": [
+    [
+     "Store",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Dining Out",
+   "grp": "Living",
+   "kind": "expense",
+   "budget": 500,
+   "quick": true,
+   "daily": true,
+   "keywords": [
+    "restaurant",
+    "dinner",
+    "lunch",
+    "breakfast",
+    "brunch",
+    "cafe",
+    "coffee",
+    "starbucks",
+    "tim hortons",
+    "tims",
+    "mcdonald",
+    "pizza",
+    "sushi",
+    "takeout",
+    "take-out",
+    "uber eats",
+    "ubereats",
+    "doordash",
+    "skip the dishes",
+    "bubble tea",
+    "ice cream",
+    "snack"
+   ],
+   "strong": [
+    "dinner",
+    "lunch",
+    "breakfast",
+    "brunch"
+   ],
+   "fields": [
+    [
+     "Where",
+     "restaurant"
+    ],
+    [
+     "With",
+     "",
+     "who"
+    ]
+   ]
+  },
+  {
+   "name": "Clothing & Beauty",
+   "grp": "Living",
+   "kind": "expense",
+   "budget": 200,
+   "quick": true,
+   "daily": true,
+   "keywords": [
+    "clothes",
+    "clothing",
+    "shoes",
+    "jacket",
+    "uniqlo",
+    "winners",
+    "h&m",
+    "zara",
+    "old navy",
+    "gap",
+    "lululemon",
+    "nike",
+    "adidas",
+    "haircut",
+    "barber",
+    "salon",
+    "nails",
+    "sephora",
+    "makeup",
+    "skincare"
+   ],
+   "fields": [
+    [
+     "What",
+     "e.g. winter jacket, haircut"
+    ],
+    [
+     "Where",
+     ""
+    ],
+    [
+     "For",
+     "",
+     "who"
+    ]
+   ]
+  },
+  {
+   "name": "Kids' Activities",
+   "grp": "Kids",
+   "kind": "expense",
+   "budget": 500,
+   "quick": true,
+   "keywords": [
+    "tuition",
+    "tutor",
+    "lesson",
+    "lessons",
+    "class",
+    "camp",
+    "school",
+    "piano",
+    "swimming",
+    "hockey",
+    "skating",
+    "soccer",
+    "basketball",
+    "tennis",
+    "art class",
+    "field trip",
+    "school supplies",
+    "math"
+   ],
+   "fields": [
+    [
+     "Activity",
+     "e.g. tennis, piano, camp"
+    ],
+    [
+     "Where",
+     "venue / school"
+    ],
+    [
+     "Teacher / coach",
+     ""
+    ],
+    [
+     "For",
+     "",
+     "who"
+    ]
+   ]
+  },
+  {
+   "name": "Learning",
+   "grp": "Growth",
+   "kind": "expense",
+   "budget": 50,
+   "keywords": [
+    "course",
+    "udemy",
+    "coursera",
+    "workshop",
+    "training",
+    "certification"
+   ],
+   "fields": [
+    [
+     "What",
+     ""
+    ],
+    [
+     "Where",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Books",
+   "grp": "Growth",
+   "kind": "expense",
+   "budget": 30,
+   "daily": true,
+   "keywords": [
+    "book",
+    "books",
+    "kindle",
+    "indigo",
+    "audible"
+   ]
+  },
+  {
+   "name": "Health & Dental",
+   "grp": "Health",
+   "kind": "expense",
+   "budget": 100,
+   "keywords": [
+    "pharmacy",
+    "drugstore",
+    "shoppers",
+    "rexall",
+    "cvs",
+    "walgreens",
+    "dentist",
+    "dental",
+    "doctor",
+    "clinic",
+    "physio",
+    "glasses",
+    "optometrist",
+    "medicine"
+   ],
+   "fields": [
+    [
+     "What for",
+     ""
+    ],
+    [
+     "Clinic",
+     ""
+    ],
+    [
+     "For",
+     "",
+     "who"
+    ]
+   ]
+  },
+  {
+   "name": "Pets",
+   "grp": "Pets",
+   "kind": "expense",
+   "budget": 100,
+   "daily": true,
+   "keywords": [
+    "pet",
+    "dog",
+    "cat",
+    "vet",
+    "petsmart",
+    "pet valu",
+    "petco",
+    "dog food",
+    "cat food",
+    "grooming"
+   ],
+   "strong": [
+    "vet"
+   ],
+   "fields": [
+    [
+     "What",
+     ""
+    ],
+    [
+     "Where",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Travel",
+   "grp": "Leisure",
+   "kind": "expense",
+   "budget": 400,
+   "quick": true,
+   "keywords": [
+    "flight",
+    "airline",
+    "hotel",
+    "airbnb",
+    "motel",
+    "resort",
+    "trip",
+    "vacation",
+    "travel",
+    "camping",
+    "campsite",
+    "air canada",
+    "westjet",
+    "delta",
+    "united",
+    "expedia"
+   ],
+   "fields": [
+    [
+     "Type",
+     "",
+     [
+      "Weekend / nearby",
+      "Long trip (a week+)"
+     ]
+    ],
+    [
+     "Where to",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Entertainment",
+   "grp": "Leisure",
+   "kind": "expense",
+   "budget": 80,
+   "daily": true,
+   "keywords": [
+    "movie",
+    "cinema",
+    "cineplex",
+    "concert",
+    "tickets",
+    "museum",
+    "bowling",
+    "game",
+    "theme park"
+   ],
+   "fields": [
+    [
+     "What",
+     ""
+    ],
+    [
+     "With",
+     "",
+     "who"
+    ]
+   ]
+  },
+  {
+   "name": "Subscriptions",
+   "grp": "Leisure",
+   "kind": "expense",
+   "budget": 100,
+   "variable": false,
+   "keywords": [
+    "subscription",
+    "netflix",
+    "spotify",
+    "disney",
+    "youtube premium",
+    "icloud",
+    "apple one",
+    "amazon prime",
+    "prime",
+    "chatgpt",
+    "claude",
+    "membership",
+    "annual fee"
+   ],
+   "strong": [
+    "subscription",
+    "membership",
+    "annual fee"
+   ]
+  },
+  {
+   "name": "Electronics",
+   "grp": "Leisure",
+   "kind": "expense",
+   "budget": 60,
+   "daily": true,
+   "keywords": [
+    "best buy",
+    "apple store",
+    "headphones",
+    "laptop",
+    "charger",
+    "cable",
+    "ipad",
+    "iphone",
+    "airpods",
+    "phone case"
+   ],
+   "fields": [
+    [
+     "What",
+     ""
+    ],
+    [
+     "Where",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Gifts & Social",
+   "grp": "Other",
+   "kind": "expense",
+   "budget": 100,
+   "keywords": [
+    "gift",
+    "gifts",
+    "present",
+    "gift card",
+    "birthday",
+    "donation",
+    "charity"
+   ],
+   "strong": [
+    "gift",
+    "birthday"
+   ],
+   "fields": [
+    [
+     "Occasion",
+     "",
+     [
+      "Birthday",
+      "Holiday",
+      "Treat",
+      "Housewarming"
+     ]
+    ],
+    [
+     "For whom",
+     ""
+    ],
+    [
+     "What",
+     ""
+    ]
+   ]
+  },
+  {
+   "name": "Misc",
+   "grp": "Other",
+   "kind": "expense",
+   "budget": 300,
+   "quick": true,
+   "daily": true,
+   "fallback": true,
+   "keywords": [
+    "amazon",
+    "home depot",
+    "canadian tire",
+    "ikea",
+    "target",
+    "post office",
+    "shipping"
+   ],
+   "fields": [
+    [
+     "What",
+     ""
+    ],
+    [
+     "For",
+     "",
+     "who"
+    ]
+   ]
+  },
+  {
+   "name": "Salary",
+   "grp": "Income",
+   "kind": "income",
+   "keywords": [
+    "salary",
+    "payroll",
+    "paycheck"
+   ]
+  },
+  {
+   "name": "Side Income",
+   "grp": "Income",
+   "kind": "income",
+   "keywords": [
+    "freelance",
+    "side",
+    "client",
+    "invoice",
+    "sold"
+   ]
+  },
+  {
+   "name": "Investment Income",
+   "grp": "Income",
+   "kind": "income",
+   "keywords": [
+    "interest",
+    "dividend",
+    "distribution"
+   ]
+  },
+  {
+   "name": "Other Income",
+   "grp": "Income",
+   "kind": "income",
+   "fallback": true,
+   "keywords": [
+    "refund",
+    "rebate",
+    "cashback",
+    "gift"
+   ]
+  }
+ ]
+}

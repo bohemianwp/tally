@@ -1,0 +1,5 @@
+data/
+backups/
+.DS_Store
+node_modules/
+docs/shots-raw/

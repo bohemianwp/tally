@@ -109,6 +109,10 @@ scripts/screenshots.sh      # phone-sized screenshots of the demo (needs Google 
 
 To add a language, copy the `en` block in `public/i18n.js` and add `templates/categories.<lang>.json`.
 
+## About this project
+
+Tally is the app my family uses every day, and I update it for our own needs. Questions and bug reports are welcome in [Issues](https://github.com/bohemianwp/tally/issues). I can't promise to build every feature request.
+
 ## License
 
 MIT

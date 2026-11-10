@@ -109,6 +109,10 @@ scripts/screenshots.sh      # 给演示数据截手机尺寸的图（需要装 G
 
 想加一种语言：复制 `public/i18n.js` 里的 `en` 那一块翻译好，再加一个 `templates/categories.<语言>.json`。
 
+## 关于这个项目
+
+Tally 是我家每天在用的 App，我按自家的需要更新它。欢迎在 [Issues](https://github.com/bohemianwp/tally/issues) 里提问、报 bug；功能建议不保证都能做。
+
 ## 许可
 
 MIT
